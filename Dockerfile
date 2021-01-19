@@ -15,7 +15,7 @@ ENV LANG en_US.utf8
 WORKDIR /
 
 RUN git clone https://github.com/epoch-team/epoch-mockup-site.git workspace \
-    && chmod -R 777 /workspace/src
+    && chmod -R 777 /workspace
 
 WORKDIR /workspace
 
