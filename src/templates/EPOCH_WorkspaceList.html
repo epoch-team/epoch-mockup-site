@@ -1,0 +1,226 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>Exastro EPOCH</title>
+    <!-- for responsive -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- font awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- ionicons -->
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- adminLTE style -->
+    <link href="dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link href="dist/css/skins/skin-blue.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="skin-blue">
+    <div class="wrapper">
+
+        <!-- トップメニュー -->
+        <header class="main-header">
+
+            <!-- ロゴ -->
+            <a href="" class="logo">メニュー</a>
+
+            <!-- トップメニュー -->
+            <nav class="navbar navbar-static-top" role="navigation">
+
+                <!-- メニュー項目 -->
+                <!-- 小さくなった時に消す -->
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+
+                    <!-- サイドバー制御 -->
+                    <a href="" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="">Workspace一覧</a></li>
+                        <!-- <li><a href="">売上管理</a></li>
+                        < !-- doropdown -- >
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">その他<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="">その他１</a></li>
+                                <li><a href="">その他２</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+
+                    <!-- 右に寄せるメニュ :navbar-rightとかもあるが、マージが無い -->
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="">システム管理者</a>
+                                <ion-icon name="person"></ion-icon>
+                                <!-- <a href=""><img src="./img/user_icon.png" width="32" height="32"></a> -->
+                                <ion-icon name="settings-outline"></ion-icon>
+                                <!-- <a href=""><img src="./img/setting_icon.png" width="32" height="32"></a> -->
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </header><!-- end header -->
+        <!-- トップメニュー -->
+        <header class="main-header">
+            <nav class="navbar navbar-static-top" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="">Workspace一覧</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="">Workspace新規作成</a></li>
+                </ul>
+            </nav>
+        </header><!-- end header -->
+
+        <!-- サイドバー -->
+        <!-- <aside class="main-sidebar">
+
+            <section class="sidebar">
+
+                <ul class="sidebar-menu">
+
+                    < !-- メニューヘッダ -- >
+                    <li class="header">機能一覧</li>
+
+                    < !-- メニュー項目 -- >
+                    <li class="active"><a href=""><i class="fa fa-circle-o"></i>新規登録</a>
+                    <li><a href=""><i class="fa fa-circle-o"></i>検索</a>
+                    < !-- treeview -- >
+                    <li class="treeview">
+                        <a href=""><i class="fa fa-circle-o"></i>その他<i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li><a href="">その他１</a></li>
+                            <li><a href="">その他２</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </section>
+
+        </aside> -->
+        <!-- ./row -->
+        <div class="row">
+            <div class="col-12 col-sm-6">
+              <!-- <div class="card card-primary card-tabs">
+                <div class="card-header p-0 pt-1">
+                  <ul class="nav nav-tabs" id="custom-tabs-one-tab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="custom-tabs-one-home-tab" data-toggle="pill" href="#custom-tabs-one-home" role="tab" aria-controls="custom-tabs-one-home" aria-selected="true">Workspace一覧</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="custom-tabs-one-profile-tab" data-toggle="pill" href="#custom-tabs-one-profile" role="tab" aria-controls="custom-tabs-one-profile" aria-selected="false">Workspace新規作成</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <div class="tab-content" id="custom-tabs-one-tabContent">
+                    <div class="tab-pane fade show active" id="custom-tabs-one-home" role="tabpanel" aria-labelledby="custom-tabs-one-home-tab"> -->
+                        <!-- content -->
+                        <div class="content-wrapper">
+
+                            <!-- コンテンツヘッダ -->
+                            <section class="content-header">
+                                <!-- パンくず -->
+                                <ol class="breadcrumb">
+                                    <li><a href="">ワークスペース一覧</a></li>
+                                </ol>
+                            </section>
+
+                            <!-- メインコンテンツ -->
+                            <div class="card">
+                                <div class="card-header">
+                                  <h3 class="card-title">Workspace</h3>
+                                  <div class="card-tools">
+                                    <div class="input-group input-group-sm" style="width: 150px;">
+                                      <div class="input-group-append">
+                                        <button type="button" class="btn btn-outline-primary btn-block">
+                                            <i class="add-outline"></i> New Workspace
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                  <table class="table table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th style="width: 20px">#</th>
+                                        <th>Workspace Name</th>
+                                        <th>Create</th>
+                                        <th style="width: 40px">Status</th>
+                                        <th style="width: 20px"></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><button type="button" class="btn btn-block btn-warning btn-sm">更新</button></td>
+                                        <td>Sockshop</td>
+                                        <td>
+                                            2021/01/01 9:00
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-danger">Enable</span>
+                                        </td>
+                                        <td><button type="button" class="btn btn-block btn-danger btn-sm">削除</button></td>
+                                      </tr>
+                                      <tr>
+                                        <td><button type="button" class="btn btn-block btn-warning btn-sm">更新</button></td>
+                                        <td>PC shop</td>
+                                        <td>
+                                            2021/01/01 9:00
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-danger">Enable</span>
+                                        </td>
+                                        <td><button type="button" class="btn btn-block btn-danger btn-sm">削除</button></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer clearfix">
+                                  <ul class="pagination pagination-sm m-0 float-right">
+                                    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <!-- /.card -->
+                            </div><!-- List -->
+                        </div>
+                        <!-- <div class="tab-pane fade" id="custom-tabs-one-profile" role="tabpanel" aria-labelledby="custom-tabs-one-profile-tab">
+                        </div> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card -->
+              </div>
+            </div>
+        </div>
+
+        <!-- フッター -->
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">Exastro EPOCH Version 0.1</div>
+            <strong>Copyright &copy; 2021</strong>, All rights reserved.
+        </footer>
+
+    </div><!-- end wrapper -->
+    <!-- JS -->
+
+    <!-- jquery -->
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js" type="text/javascript"></script>
+    <!-- bootstrap -->
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- adminLTE -->
+    <script src="dist/js/app.min.js" type="text/javascript"></script>
+</body>
+</html>
