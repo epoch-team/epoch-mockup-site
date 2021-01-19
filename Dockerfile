@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 RUN apt-get -y update \
     && apt-get -y upgrade \
-    && apt-get install -y locales curl python3-distutils git \
+    && apt-get install -y locales curl python3-distutils git vim \
     && apt-get install -y apache2 \
     && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
     && python3 get-pip.py \
@@ -21,9 +21,10 @@ RUN     echo "django"   >   requirements.txt \
 
 RUN	chmod -R 777 /var/www
 
+
 COPY . /workspace
 
 EXPOSE 8000
 
-ENTRYPOINT ["/bin/sh", "-c", "while :; do sleep 60; done"]
+ENTRYPOINT ["/bin/sh", "-c", "apachectl -D FOREGROUND; while :; do sleep 60; done"]
 
