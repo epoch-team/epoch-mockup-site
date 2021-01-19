@@ -20,10 +20,7 @@ RUN     echo "django"   >   requirements.txt \
 
 WORKDIR /workspace/src
 
-RUN django-admin startproject ita_api_test_prj . \
-    && python3 manage.py startapp ita_api_test_app
-
-COPY . /workspace
+git clone https://github.com/epoch-team/epoch-mockup-site.git src
 
 EXPOSE 8000
 
