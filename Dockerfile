@@ -12,12 +12,8 @@ RUN apt-get -y update \
 
 #RUN apt-get install -y apache2
 
-RUN touch /etc/apt/sources.list.d/nginx.list \
-    && echo "deb http://nginx.org/packages/ubuntu/ precise nginx" >> /etc/apt/sources.list.d/nginx.list \
-    && echo "deb-src http://nginx.org/packages/ubuntu/ precise nginx" >> /etc/apt/sources.list.d/nginx.list \
-    && curl http://nginx.org/keys/nginx_signing.key | apt-key add - \
-    && apt-get update \
-    && apt-get install -y nginx \
+RUN apt-get update \
+    && apt-get install -y nginx
 
 ENV LANG en_US.utf8
 
