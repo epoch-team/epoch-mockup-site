@@ -39,16 +39,32 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Navbar Search -->
-      <li class="nav-item " style="color:white;">
-        システム管理者
-        <button class="btn" type="button" data-widget="navbar-search">
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link" style="color:white;">システム管理者</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
           <i class="fas fa-user"></i>
-        </button>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-header">第一システム開発部</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <span class="float-right text-muted text-sm">パスワード変更</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <span class="float-right text-muted text-sm">管理者設定</span>
+          </a>
+        </div>
+      </li>
+      <li class="nav-item">
         <button class="btn" type="button" data-widget="navbar-search">
           <i class="fas fa-cog"></i>
         </button>
       </li>
     </ul>
+  </li>
   </nav>
   <!-- /.navbar -->
   <!-- Navbar -->
