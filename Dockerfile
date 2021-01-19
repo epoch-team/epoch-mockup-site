@@ -15,7 +15,9 @@ ENV LANG en_US.utf8
 WORKDIR /
 
 RUN git clone https://github.com/epoch-team/epoch-mockup-site.git workspace \
-    && chmod -R 777 src
+    && chmod -R 777 /workspace/src
+
+WORKDIR /workspace
 
 RUN     echo "django"   >   requirements.txt \
     &&  echo "requests" >>  requirements.txt \
