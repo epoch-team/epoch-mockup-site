@@ -18,9 +18,9 @@ RUN     echo "django"   >   requirements.txt \
     &&  echo "requests" >>  requirements.txt \
     &&  pip install -r requirements.txt
 
-WORKDIR /workspace/src
 
-RUN git clone https://github.com/epoch-team/epoch-mockup-site.git src
+RUN git clone https://github.com/epoch-team/epoch-mockup-site.git src \
+    && chmod -R src
 
 EXPOSE 8000
 
