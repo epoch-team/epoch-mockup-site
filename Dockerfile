@@ -10,11 +10,6 @@ RUN apt-get -y update \
     && rm -rf /var/lib/apt/lists/* \
     && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 
-#RUN apt-get install -y apache2
-
-RUN apt-get update \
-    && apt-get install -y nginx
-
 ENV LANG en_US.utf8
 
 WORKDIR /workspace
@@ -23,15 +18,14 @@ RUN     echo "django"   >   requirements.txt \
     &&  echo "requests" >>  requirements.txt \
     &&  pip install -r requirements.txt
 
-# for Apache2
-#RUN	chmod -R 777 /var/www \
-#    &&  chmod -R 777 /var/run \
-#    &&  chmod -R 777 /var/lock
+WORKDIR /workspace/src
 
+RUN django-admin startproject ita_api_test_prj . \
+    && python3 manage.py startapp ita_api_test_app
 
 COPY . /workspace
 
 EXPOSE 8000
 
-ENTRYPOINT ["/bin/sh", "-c", "while :; do sleep 60; done"]
+ENTRYPOINT ["/bin/sh", "-c", "cd /workspace/src; python3 manage.py runserver 0.0.0.0:8000; while :; do sleep 60; done"]
 

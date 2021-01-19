@@ -1,0 +1,59 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+
+</head>
+
+<body lang=JA>
+    <form method="POST" action="/ita_api_test/editRestApi">
+        {% csrf_token %}
+        <table width="1100" border="1">
+            <colgroup>
+                <col width="40">
+                <col width="220">
+                <col width="220">
+                <col width="220">
+                <col width="220">
+                <col width="*">
+            </colgroup>
+            <caption style="text-align: left;"><b><u>■CI／CD設定情報</b></u></caption>
+            <thead>
+                <tr>
+                    <th style="background-color: cornflowerblue;">No</th>
+                    <th style="background-color: cornflowerblue;">項目</th>
+                    <th style="background-color: cornflowerblue;">テスト環境</th>
+                    <th style="background-color: cornflowerblue;">プロダクションミラー環境</th>
+                    <th style="background-color: cornflowerblue;">プロダクション環境</th>
+                    <th style="background-color: cornflowerblue;">項目説明</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: right;">1</td>
+                    <td>Catalogue Replicas</td>
+                    <td>
+                        <input name="Replicas" type="text" style="width: 100%;">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">2</td>
+                    <td>Catalogue Image</td>
+                    <td>
+                        <input name="Image" type="text" style="width: 100%;">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <input type="submit" style="width: 100;" value="更新">
+    </form>
+</body>
+
+</html>
