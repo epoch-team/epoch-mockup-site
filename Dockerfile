@@ -20,7 +20,7 @@ RUN     echo "django"   >   requirements.txt \
 
 
 RUN git clone https://github.com/epoch-team/epoch-mockup-site.git src \
-    && chmod -R src
+    && chmod -R 777 src
 
 EXPOSE 8000
 
