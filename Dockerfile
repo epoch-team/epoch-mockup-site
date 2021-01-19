@@ -12,15 +12,14 @@ RUN apt-get -y update \
 
 ENV LANG en_US.utf8
 
-WORKDIR /workspace
+WORKDIR /
+
+RUN git clone https://github.com/epoch-team/epoch-mockup-site.git workspace \
+    && chmod -R 777 src
 
 RUN     echo "django"   >   requirements.txt \
     &&  echo "requests" >>  requirements.txt \
     &&  pip install -r requirements.txt
-
-
-RUN git clone https://github.com/epoch-team/epoch-mockup-site.git src \
-    && chmod -R 777 src
 
 EXPOSE 8000
 
