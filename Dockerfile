@@ -20,7 +20,7 @@ RUN     echo "django"   >   requirements.txt \
 
 WORKDIR /workspace/src
 
-git clone https://github.com/epoch-team/epoch-mockup-site.git src
+RUN git clone https://github.com/epoch-team/epoch-mockup-site.git src
 
 EXPOSE 8000
 
