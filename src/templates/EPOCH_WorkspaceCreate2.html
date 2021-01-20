@@ -57,7 +57,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <button class="btn bg-secondary disabled color-palette" type="button" data-widget="navbar-search" onclick="location.href='http://epoch-mockup-site-git-test2-epoch-test.apps.ky-labo-ops2.exastro-ops-2.com/mockup/EPOCH_WorkspaceList.html'">
         Workspace一覧
       </button>
-      <button class="btn bg-secondary color-palette" type="button" data-widget="navbar-search">
+      <button class="btn bg-secondary color-palette" type="button" data-widget="navbar-search"  onclick="location.href='http://epoch-mockup-site-git-test2-epoch-test.apps.ky-labo-ops2.exastro-ops-2.com/mockup/EPOCH_WorkspaceCreate1.html'">
         Workspace新規作成
       </button>
     </div>
@@ -72,7 +72,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="row mb-2">
           <div class="col-md-12">
             <ol class="breadcrumb float-sm-left">
-              <li class="breadcrumb-item"><a href="#">Workspace新規作成</a></li>
+              <li class="breadcrumb-item"><a href="EPOCH_WorkspaceList.html">Workspace一覧</a></li>
+              <li class="breadcrumb-item active">Workspace作成</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -80,84 +81,199 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </div>
     <!-- /.content-header -->
 
-    <!-- Main content -->
-    <div class="content">
+      <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
+        <div class="row mb-2">
+          <div class="col-sm-12">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item">ワークスペース名指定</li>
+              <li class="breadcrumb-item active"><b>環境構成</b></li>
+              <li class="breadcrumb-item">EPOCH導入クラスター指定</li>
+              <li class="breadcrumb-item">レポジトリ指定</li>
+              <li class="breadcrumb-item">確認</li>
+              <li class="breadcrumb-item">完了</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
 
-            <!-- メインコンテンツ -->
-            <div class="card">
-                <div class="card-header">
-                  <h3 class="card-title">Workspace</h3>
-                  <div class="card-tools">
-                    <div class="input-group input-group-sm" style="width: 180px;">
-                      <div class="input-group-append">
-                        <button type="button" class="btn btn-outline-primary btn-block">
-                            <i class="fas fa-plus"> New Workspace</i>
-                        </button>
-                      </div>
-                    </div>
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+      <div class="col-sm-6">
+        <h1>環境構成</h1>
+      </div>
+      <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- jquery validation -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">試験環境</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form id="quickForm">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">クラスタ ホスト名</label>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="クラスタ ホスト名">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">namespace</label>
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="namespace">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">アカウント</label>
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="アカウント">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">パスワード</label>
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="パスワード">
+                  </div>
                   </div>
                 </div>
-
-                <!-- /.card-header -->
-                <div class="card-body">
-                  <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th style="width: 85px"></th>
-                        <th>Workspace Name</th>
-                        <th>Create</th>
-                        <th style="width: 60px">Status</th>
-                        <th style="width: 85px"></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><button type="button" class="btn btn-block btn-warning btn-sm">更新</button></td>
-                        <td>Sockshop</td>
-                        <td>
-                            2021/01/01 9:00
-                        </td>
-                        <td>
-                            <span class="badge bg-primary">Enable</span>
-                        </td>
-                        <td><button type="button" class="btn btn-block btn-danger btn-sm">削除</button></td>
-                      </tr>
-                      <tr>
-                        <td><button type="button" class="btn btn-block btn-warning btn-sm">更新</button></td>
-                        <td>PC shop</td>
-                        <td>
-                            2021/01/01 9:00
-                        </td>
-                        <td>
-                            <span class="badge bg-primary">Enable</span>
-                        </td>
-                        <td><button type="button" class="btn btn-block btn-danger btn-sm">削除</button></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
                 <!-- /.card-body -->
-                <div class="card-footer clearfix">
-                  <ul class="pagination pagination-sm m-0 float-right">
-                    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                  </ul>
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">追加</button>
                 </div>
-              </div>
-            </div><!-- /.card -->
+              </form>
+            </div>
+            <!-- /.card -->
+            </div>
+          <!--/.col (left) -->
+          <!-- right column -->
+          <div class="col-md-6">
+
           </div>
+          <!--/.col (right) -->
         </div>
         <!-- /.row -->
       </div><!-- /.container-fluid -->
-    </div>
+
+      <div class="container-fluid">
+        <hr>
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+              <!-- jquery validation -->
+              <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">プロダクションミラー環境</h3>
+                </div>
+                <!-- /.card-header -->
+                <!-- form start -->
+                <form id="quickForm">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">クラスタ ホスト名</label>
+                      <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="クラスタ ホスト名">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">namespace</label>
+                      <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="namespace">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">アカウント</label>
+                      <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="アカウント">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">パスワード</label>
+                      <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="パスワード">
+                    </div>
+                    </div>
+                  </div>
+                  <!-- /.card-body -->
+                  <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">追加</button>
+                  </div>
+                </form>
+              </div>
+              <!-- /.card -->
+              </div>
+            <!--/.col (left) -->
+            <!-- right column -->
+            <div class="col-md-6">
+  
+            </div>
+            <!--/.col (right) -->
+          </div>
+          <!-- /.row -->
+        </div><!-- /.container-fluid -->
+
+        <div class="container-fluid">
+          <hr>
+          <div class="row">
+              <!-- left column -->
+              <div class="col-md-12">
+                <!-- jquery validation -->
+                <div class="card card-primary">
+                  <div class="card-header">
+                    <h3 class="card-title">プロダクション環境</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <!-- form start -->
+                  <form id="quickForm">
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">クラスタ ホスト名</label>
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="クラスタ ホスト名">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">namespace</label>
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="namespace">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">アカウント</label>
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="アカウント">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">パスワード</label>
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="パスワード">
+                      </div>
+                      </div>
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer">
+                      <button type="submit" class="btn btn-primary">追加</button>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                      <button type="button" class="btn btn-primary">戻る</button>
+                      <button type="button" class="btn btn-primary">次へ</button>
+                    </div>
+                </form>
+                </div>
+                <!-- /.card -->
+                </div>
+              <!--/.col (left) -->
+              <!-- right column -->
+              <div class="col-md-6">
+    
+              </div>
+              <!--/.col (right) -->
+            </div>
+            <!-- /.row -->
+          </div><!-- /.container-fluid -->
+  
+    </section>
     <!-- /.content -->
   </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+</div>
   <!-- /.content-wrapper -->
 
   <!-- Control Sidebar -->
