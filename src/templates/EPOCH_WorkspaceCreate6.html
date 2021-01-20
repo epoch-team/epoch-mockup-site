@@ -118,193 +118,42 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <form>
               <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title">以下の内容でワークスペースを作成します。よろしいですか？</h3>
+                    <h3 class="card-title">ワークスペース作成状況</h3>
                   </div>
                   <!-- /.card-header -->
 
-                  <div class="card-body">
-                    <div class="card">
-                      <div class="card-header">
-                        <h3 class="card-title">ワークスペース名指定</h3>
-                      </div>
-                      <div class="card-body">
-                        <table class="table table-borderless table-sm">
-                          <tbody>
-                            <tr>
-                              <td style="width: 250px">ワークスペース名</td>
-                              <td>sockshop</td>
-                            </tr>
-                          </tbody>
-                        </table>
+                  <!-- Timelime example  -->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <!-- The time line -->
+                      <div class="timeline">
+                        <!-- timeline time label -->
+                        <div class="time-label">
+                          <span class="bg-blue">ワークスペース作成</span>
+                        </div>
+                        <!-- /.timeline-label -->
+                        <!-- timeline item -->
+                        <div>
+                          <i class="fas fa-spinner bg-yellow"></i>
+                          <div class="timeline-item">
+                            <span class="time"><i class="fas fa-clock"></i> 12:05</span>
+                            <h3 class="timeline-header">Create namespace....</h3>
+
+                            <div class="timeline-body">
+                              now creating...
+                            </div>
+                          </div>
+                        </div>
+                        <!-- END timeline item -->
+                        <div>
+                          <i class="fas fa-wrench bg-gray"></i>
+                        </div>
                       </div>
                     </div>
-
-                    <div class="card">
-                      <div class="card-header">
-                        <h3 class="card-title">環境構成</h3>
-                      </div>
-                      <div class="card-body">
-                        <table class="table table-borderless table-sm">
-                          <colgroup>
-                            <col style="width: 30px">
-                            <col style="width: 180px">
-                            <col>
-                          </colgroup>
-                          <thead>
-                            <tr>
-                              <th colspan="3">試験環境</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td></td>
-                              <td>クラスタ　ホスト名</td>
-                              <td>sockshop.host.test</td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td>namespace</td>
-                              <td>test-sockshop</td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td>アカウント</td>
-                              <td>test-user</td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td>パスワード</td>
-                              <td>******</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <hr>
-                        <table class="table table-borderless table-sm">
-                          <colgroup>
-                            <col style="width: 30px">
-                            <col style="width: 180px">
-                            <col>
-                          </colgroup>
-                          <thead>
-                            <tr>
-                              <th colspan="3">プロダクションミラー試験環境</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td></td>
-                              <td>クラスタ　ホスト名</td>
-                              <td>sockshop.host.mirror</td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td>namespace</td>
-                              <td>mirror-sockshop</td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td>アカウント</td>
-                              <td>user</td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td>パスワード</td>
-                              <td>******</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <hr>
-                        <table class="table table-borderless table-sm">
-                          <colgroup>
-                            <col style="width: 30px">
-                            <col style="width: 180px">
-                            <col>
-                          </colgroup>
-                          <thead>
-                            <tr>
-                              <th colspan="3">プロダクション試験環境</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td></td>
-                              <td>クラスタ　ホスト名</td>
-                              <td>sockshop.host.production</td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td>namespace</td>
-                              <td>sockshop</td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td>アカウント</td>
-                              <td>user</td>
-                            </tr>
-                            <tr>
-                              <td></td>
-                              <td>パスワード</td>
-                              <td>******</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-
-
-                    <div class="card">
-                      <div class="card-header">
-                        <h3 class="card-title">EPOCH導入クラスター指定</h3>
-                      </div>
-                      <div class="card-body">
-                        <table class="table table-borderless table-sm">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <i class="far fa-check-square"></i> 
-                                試験環境クラスターに導入する
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-
-
-
-                    <div class="card">
-                      <div class="card-header">
-                        <h3 class="card-title">リポジトリ指定</h3>
-                      </div>
-                      <div class="card-body">
-                        <table class="table table-borderless table-sm">
-                          <tbody>
-                            <tr>
-                              <td style="width: 250px">リポジトリアカウントtoken</td>
-                              <td>xxxxxxxxxxxxxxxxtoken</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-
-                  </div>
-                  <!-- /.card-body -->
-                  <div class="card-footer clearfix">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-block btn-outline-primary" onclick="location.href='EPOCH_WorkspaceCreate3.html';">
-                        <i class="fa fa-backward "></i>
-                        戻る
-                      </button>
-                    </div>
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-block btn-outline-primary" onclick="location.href='EPOCH_WorkspaceCreate5.html';">
-                        <i class="fa fa-wrench"></i>
-                        作成
-                      </button>
-                    </div>
+                    <!-- /.col -->
                   </div>
                 </div>
+                <!-- /.timeline -->
               </div><!-- /.card -->
             </form>
           </div>
