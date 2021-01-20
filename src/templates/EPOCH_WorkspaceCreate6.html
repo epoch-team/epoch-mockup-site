@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workspace作成</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-collapse layout-top-nav">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-blue navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-left" style="color:white;">
+      <li class="nav-item d-none d-sm-inline-block">
+        Workspace作成
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+      
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link" style="color:white;">システム管理者</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="fas fa-user"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-header">第一システム開発部</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <span class="float-right text-muted text-sm">パスワード変更</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <span class="float-right text-muted text-sm">管理者設定</span>
+          </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <button class="btn" type="button" data-widget="navbar-search">
+          <i class="fas fa-cog"></i>
+        </button>
+      </li>
+    </ul>
+  </li>
+  </nav>
+  <!-- /.navbar -->
+  <!-- Navbar -->
+  <div class="btn-toolbar">
+    <div class="btn-group">
+      <button class="btn bg-secondary color-palette" type="button" data-widget="navbar-search">
+        Workspace一覧
+      </button>
+      <button class="btn bg-secondary disabled color-palette" type="button" data-widget="navbar-search">
+        Workspace新規作成
+      </button>
+    </div>
+  </div>
+  <!-- /.navbar -->
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-md-12">
+            <ol class="breadcrumb float-sm-left">
+              <li class="breadcrumb-item"><a href="EPOCH_WorkspaceList.html">Workspace一覧</a></li>
+              <li class="breadcrumb-item active">Workspace作成</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+            <!-- ナビ -->
+            <div class="col-md-12">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">ワークスペース名指定</li>
+              <li class="breadcrumb-item">環境構成</li>
+              <li class="breadcrumb-item">EPOCH導入クラスター指定</li>
+              <li class="breadcrumb-item">レポジトリ指定</li>
+              <li class="breadcrumb-item">確認</li>
+              <li class="breadcrumb-item active"><b>完了</b></li>
+            </ol>
+          </div><!-- /.col -->
+          
+          <div class="col-lg-12">
+            <!-- メインコンテンツ -->
+            <form>
+              <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">以下の内容でワークスペースを作成します。よろしいですか？</h3>
+                  </div>
+                  <!-- /.card-header -->
+
+                  <div class="card-body">
+                    <div class="card">
+                      <div class="card-header">
+                        <h3 class="card-title">ワークスペース名指定</h3>
+                      </div>
+                      <div class="card-body">
+                        <table class="table table-borderless table-sm">
+                          <tbody>
+                            <tr>
+                              <td style="width: 250px">ワークスペース名</td>
+                              <td>sockshop</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-header">
+                        <h3 class="card-title">環境構成</h3>
+                      </div>
+                      <div class="card-body">
+                        <table class="table table-borderless table-sm">
+                          <colgroup>
+                            <col style="width: 30px">
+                            <col style="width: 180px">
+                            <col>
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th colspan="3">試験環境</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td></td>
+                              <td>クラスタ　ホスト名</td>
+                              <td>sockshop.host.test</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>namespace</td>
+                              <td>test-sockshop</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>アカウント</td>
+                              <td>test-user</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>パスワード</td>
+                              <td>******</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <hr>
+                        <table class="table table-borderless table-sm">
+                          <colgroup>
+                            <col style="width: 30px">
+                            <col style="width: 180px">
+                            <col>
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th colspan="3">プロダクションミラー試験環境</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td></td>
+                              <td>クラスタ　ホスト名</td>
+                              <td>sockshop.host.mirror</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>namespace</td>
+                              <td>mirror-sockshop</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>アカウント</td>
+                              <td>user</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>パスワード</td>
+                              <td>******</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <hr>
+                        <table class="table table-borderless table-sm">
+                          <colgroup>
+                            <col style="width: 30px">
+                            <col style="width: 180px">
+                            <col>
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th colspan="3">プロダクション試験環境</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td></td>
+                              <td>クラスタ　ホスト名</td>
+                              <td>sockshop.host.production</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>namespace</td>
+                              <td>sockshop</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>アカウント</td>
+                              <td>user</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>パスワード</td>
+                              <td>******</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+
+                    <div class="card">
+                      <div class="card-header">
+                        <h3 class="card-title">EPOCH導入クラスター指定</h3>
+                      </div>
+                      <div class="card-body">
+                        <table class="table table-borderless table-sm">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <i class="far fa-check-square"></i> 
+                                試験環境クラスターに導入する
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+
+
+                    <div class="card">
+                      <div class="card-header">
+                        <h3 class="card-title">リポジトリ指定</h3>
+                      </div>
+                      <div class="card-body">
+                        <table class="table table-borderless table-sm">
+                          <tbody>
+                            <tr>
+                              <td style="width: 250px">リポジトリアカウントtoken</td>
+                              <td>xxxxxxxxxxxxxxxxtoken</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- /.card-body -->
+                  <div class="card-footer clearfix">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-block btn-outline-primary" onclick="location.href='EPOCH_WorkspaceCreate3.html';">
+                        <i class="fa fa-backward "></i>
+                        戻る
+                      </button>
+                    </div>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-block btn-outline-primary" onclick="location.href='EPOCH_WorkspaceCreate5.html';">
+                        <i class="fa fa-wrench"></i>
+                        作成
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- /.card -->
+            </form>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Title</h5>
+      <p>Sidebar content</p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Version 0.1
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2021 NEC</strong> All rights reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
