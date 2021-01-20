@@ -8,5 +8,33 @@
         <ul>
             <li><a href="./EPOCH_WorkspaceList.html">ワークスペース一覧</a></li>
         </ul>
+        <ul>
+            <li><a href="./EPOCH_WorkspaceCreate1.html">ワークスペース作成（1.ワークスペース名指定）</a></li>
+        </ul>
+        <ul>
+            <li><a href="./EPOCH_WorkspaceCreate2.html">ワークスペース作成（2.環境構成）</a></li>
+        </ul>
+        <ul>
+            <li><a href="./EPOCH_WorkspaceCreate3.html">ワークスペース作成（3.EPOCH導入クラスター指定）</a></li>
+        </ul>
+        <ul>
+            <li><a href="./EPOCH_WorkspaceCreate4.html">ワークスペース作成（4.リポジトリ指定）</a></li>
+        </ul>
+        <ul>
+            <li><a href="./EPOCH_WorkspaceCreate5.html">ワークスペース作成（5.確認）</a></li>
+        </ul>
+        <ul>
+            <li><a href="./EPOCH_WorkspaceCreate6.html">ワークスペース作成（6.完了）</a></li>
+        </ul>
+
+
+        <ul>
+            <li>※参考 反映コマンド</li>
+            <pre>
+                cd /home/epoch-mockup-site
+                git add .; git commit -m "update"; git push -u origin main
+                oc exec -it epoch-mockup-site-git-test2-7bc97bf8c6-2ch8v -n epoch-test -- bash -c "git pull"
+            </pre>
+        </ul>
     </body>
 </html>
