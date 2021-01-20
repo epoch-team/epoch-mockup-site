@@ -5,7 +5,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html>
 <head>
-  <meta http-equiv="Refresh" content="3;URL=EPOCH_WorkspaceCreate6-2.html">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Workspace作成</title>
@@ -105,12 +104,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- ナビ -->
             <div class="col-md-12">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item">ワークスペース名指定</li>
+              <li class="breadcrumb-item active"><b>ワークスペース名指定</b></li>
               <li class="breadcrumb-item">環境構成</li>
               <li class="breadcrumb-item">EPOCH導入クラスター指定</li>
               <li class="breadcrumb-item">レポジトリ指定</li>
               <li class="breadcrumb-item">確認</li>
-              <li class="breadcrumb-item active"><b>完了</b></li>
+              <li class="breadcrumb-item">完了</li>
             </ol>
           </div><!-- /.col -->
           
@@ -118,42 +117,29 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- メインコンテンツ -->
             <form>
               <div class="card">
-                  <div class="card-header">
-                    <h3 class="card-title">ワークスペース作成状況</h3>
-                  </div>
                   <!-- /.card-header -->
-
-                  <!-- Timelime example  -->
-                  <div class="row">
-                    <div class="col-md-12">
-                      <!-- The time line -->
-                      <div class="timeline">
-                        <!-- timeline time label -->
-                        <div class="time-label">
-                          <span class="bg-blue">ワークスペース作成</span>
-                        </div>
-                        <!-- /.timeline-label -->
-                        <!-- timeline item -->
-                        <div>
-                          <i class="fas fa-spinner bg-yellow"></i>
-                          <div class="timeline-item">
-                            <span class="time"><i class="fas fa-clock"></i> 12:05</span>
-                            <h3 class="timeline-header">Create namespace....</h3>
-
-                            <div class="timeline-body">
-                              now creating...
-                            </div>
-                          </div>
-                        </div>
-                        <!-- END timeline item -->
-                        <div>
-                          <i class="fas fa-wrench bg-gray"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- /.col -->
+                  <div class="card-body">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td style="width: 250px; padding-left:40px;" >
+                              ワークスペース名
+                          </td>
+                          <td><input type="text" class="form-control" placeholder="ワークスペース名"></td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-                <!-- /.timeline -->
+                  <!-- /.card-body -->
+                  <div class="card-footer clearfix">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-block btn-outline-primary" onclick="location.href='EPOCH_WorkspaceCreate2.html';">
+                        次へ
+                        <i class="fa fa-forward "></i> 
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div><!-- /.card -->
             </form>
           </div>
