@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workspace作成</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-collapse layout-top-nav">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-blue navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-left" style="color:white;">
+      <li class="nav-item d-none d-sm-inline-block">
+        Workspace作成
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+      
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link" style="color:white;">システム管理者</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="fas fa-user"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-header">第一システム開発部</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <span class="float-right text-muted text-sm">パスワード変更</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <span class="float-right text-muted text-sm">管理者設定</span>
+          </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <button class="btn" type="button" data-widget="navbar-search">
+          <i class="fas fa-cog"></i>
+        </button>
+      </li>
+    </ul>
+  </li>
+  </nav>
+  <!-- /.navbar -->
+  <!-- Navbar -->
+  <div class="btn-toolbar">
+    <div class="btn-group">
+      <button class="btn bg-secondary color-palette" type="button" data-widget="navbar-search">
+        Workspace一覧
+      </button>
+      <button class="btn bg-secondary disabled color-palette" type="button" data-widget="navbar-search">
+        Workspace新規作成
+      </button>
+    </div>
+  </div>
+  <!-- /.navbar -->
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-md-12">
+            <ol class="breadcrumb float-sm-left">
+              <li class="breadcrumb-item"><a href="#">Workspace一覧</a></li>
+              <li class="breadcrumb-item"><a href="#">Workspace作成</a></li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+      <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-md-12">
+            <ol class="breadcrumb float-sm-left">
+              <li class="breadcrumb-item"><a href="#">ワークスペース名指定</a></li>
+              <li class="breadcrumb-item"><a href="#">環境構成</a></li>
+              <li class="breadcrumb-item"><a href="#">EPOCH導入クラスター指定</a></li>
+              <li class="breadcrumb-item"><a href="#">レポジトリ指定</a></li>
+              <li class="breadcrumb-item"><a href="#">確認</a></li>
+              <li class="breadcrumb-item"><a href="#">完了</a></li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <!-- メインコンテンツ -->
+            <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Workspace</h3>
+                  <div class="card-tools">
+                    <div class="input-group input-group-sm" style="width: 180px;">
+                      <div class="input-group-append">
+                        <button type="button" class="btn btn-outline-primary btn-block">
+                            <i class="fas fa-plus"> New Workspace</i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th style="width: 85px"></th>
+                        <th>Workspace Name</th>
+                        <th>Create</th>
+                        <th style="width: 60px">Status</th>
+                        <th style="width: 85px"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><button type="button" class="btn btn-block btn-warning btn-sm">更新</button></td>
+                        <td>Sockshop</td>
+                        <td>
+                            2021/01/01 9:00
+                        </td>
+                        <td>
+                            <span class="badge bg-primary">Enable</span>
+                        </td>
+                        <td><button type="button" class="btn btn-block btn-danger btn-sm">削除</button></td>
+                      </tr>
+                      <tr>
+                        <td><button type="button" class="btn btn-block btn-warning btn-sm">更新</button></td>
+                        <td>PC shop</td>
+                        <td>
+                            2021/01/01 9:00
+                        </td>
+                        <td>
+                            <span class="badge bg-primary">Enable</span>
+                        </td>
+                        <td><button type="button" class="btn btn-block btn-danger btn-sm">削除</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer clearfix">
+                  <ul class="pagination pagination-sm m-0 float-right">
+                    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- /.card -->
+          </div>
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Title</h5>
+      <p>Sidebar content</p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Version 0.1
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2021 NEC</strong> All rights reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
