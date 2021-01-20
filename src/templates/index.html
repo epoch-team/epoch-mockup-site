@@ -5,6 +5,7 @@
     </head>
     <body>
         <h1>EPOCHモックサイト</h1>
+        <hr/>
         <ul>
             <li><a href="./EPOCH_WorkspaceList.html">ワークスペース一覧</a></li>
         </ul>
@@ -27,14 +28,26 @@
             <li><a href="./EPOCH_WorkspaceCreate6.html">ワークスペース作成（6.完了）</a></li>
         </ul>
 
+        <hr/>
 
         <ul>
-            <li>※参考 反映コマンド</li>
-            <pre>
-                cd /home/epoch-mockup-site
-                git add .; git commit -m "update"; git push -u origin main
-                oc exec -it epoch-mockup-site-git-test2-7bc97bf8c6-2ch8v -n epoch-test -- bash -c "git pull"
-            </pre>
+            <li>以下、参考情報</li>
         </ul>
+
+        <ul>
+            <li><a href="https://adminlte.io/themes/v3/">※参考 AdminLTEサイト</a></li>
+        </ul>
+        
+        <ul>
+            <li>
+                ※参考 反映コマンド
+<pre>
+cd /home/epoch-mockup-site
+git add .; git commit -m "update"; git push -u origin main
+oc exec -it epoch-mockup-site-git-test2-7bc97bf8c6-2ch8v -n epoch-test -- bash -c "git pull"
+</pre>
+            </li>
+        </ul>
+        <hr/>
     </body>
 </html>
