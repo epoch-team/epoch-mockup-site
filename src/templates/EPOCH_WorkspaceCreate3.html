@@ -126,8 +126,40 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <table class="table table-borderless">
                       <tbody>
                         <tr>
-                          <td style="width: 250px">リポジトリアカウントtoken</td>
-                          <td><input type="text" class="form-control" placeholder="Enter ..."></td>
+                          <td colspan="2">
+
+                            <div class="custom-control custom-radio">
+                              <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" checked="">
+                              <label for="customRadio2" class="custom-control-label">試験環境クラスターに導入する</label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" >
+
+                            <div class="custom-control custom-radio">
+                              <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio">
+                              <label for="customRadio2" class="custom-control-label">以外のクラスターに導入する</label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width: 250px; padding-left:40px;" >
+                              ホスト名
+                          </td>
+                          <td><input type="text" class="form-control" placeholder="ホスト名またはIPアドレス"></td>
+                        </tr>
+                        <tr>
+                          <td style="width: 250px; padding-left:40px;" >
+                              アカウント
+                          </td>
+                          <td><input type="text" class="form-control" placeholder="アカウント"></td>
+                        </tr>
+                        <tr>
+                          <td style="width: 250px; padding-left:40px;" >
+                              パスワード
+                          </td>
+                          <td><input type="password" class="form-control" placeholder="パスワード"></td>
                         </tr>
                       </tbody>
                     </table>
