@@ -1,0 +1,7 @@
+.breadcrumb-item.active{/* アクティブ文字色の変更 */
+    color: blue;
+    font-weight: bold;
+}
+.breadcrumb-item+.breadcrumb-item::before{/*区切り線の変更*/
+	    content: ">";
+}
