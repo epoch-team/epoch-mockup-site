@@ -88,29 +88,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="row mb-2">
           <div class="col-md-12">
             <ol class="breadcrumb float-sm-left">
-              <li class="breadcrumb-item"><a href="#">Workspace一覧</a></li>
-              <li class="breadcrumb-item active"><a href="#">Workspace作成</a></li>
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-
-      <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-md-12">
-            <ol class="breadcrumb float-sm-left" stlyle="--bs-breadcrumb-divider: '>';">
-              <li class="breadcrumb-item">ワークスペース名指定</li>
-              <li class="breadcrumb-item">環境構成</li>
-              <li class="breadcrumb-item">EPOCH導入クラスター指定</li>
-              <li class="breadcrumb-item active" aria-current="page">レポジトリ指定</li>
-              <li class="breadcrumb-item">確認</li>
-              <li class="breadcrumb-item">完了</li>
+              <li class="breadcrumb-item"><a href="EPOCH_WorkspaceList.html">Workspace一覧</a></li>
+              <li class="breadcrumb-item active">Workspace作成</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -122,73 +101,49 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="content">
       <div class="container-fluid">
         <div class="row">
+            <!-- ナビ -->
+            <div class="col-md-12">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">ワークスペース名指定</li>
+              <li class="breadcrumb-item">環境構成</li>
+              <li class="breadcrumb-item">EPOCH導入クラスター指定</li>
+              <li class="breadcrumb-item active"><b>レポジトリ指定</b></li>
+              <li class="breadcrumb-item">確認</li>
+              <li class="breadcrumb-item">完了</li>
+            </ol>
+          </div><!-- /.col -->
+          
           <div class="col-lg-12">
-
             <!-- メインコンテンツ -->
-            <div class="card">
-                <div class="card-header">
-                  <h3 class="card-title">Workspace</h3>
-                  <div class="card-tools">
-                    <div class="input-group input-group-sm" style="width: 180px;">
-                      <div class="input-group-append">
-                        <button type="button" class="btn btn-outline-primary btn-block">
-                            <i class="fas fa-plus"> New Workspace</i>
-                        </button>
-                      </div>
+            <form>
+              <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">指定したリポジトリアカウントにEPOCHで管理するリポジトリを自動で作成します</h3>
+                  </div>
+
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td style="width: 250px">リポジトリアカウントtoken</td>
+                          <td><input type="text" class="form-control" placeholder="Enter ..."></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
+                  <div class="card-footer clearfix">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-block btn-outline-primary" onclick="location.href='EPOCH_WorkspaceCreate3.html';">&lt&nbsp戻る</button>
+                    </div>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-block btn-outline-primary" onclick="location.href='EPOCH_WorkspaceCreate5.html';">次へ&nbsp&gt</button>
                     </div>
                   </div>
                 </div>
-
-                <!-- /.card-header -->
-                <div class="card-body">
-                  <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th style="width: 85px"></th>
-                        <th>Workspace Name</th>
-                        <th>Create</th>
-                        <th style="width: 60px">Status</th>
-                        <th style="width: 85px"></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><button type="button" class="btn btn-block btn-warning btn-sm">更新</button></td>
-                        <td>Sockshop</td>
-                        <td>
-                            2021/01/01 9:00
-                        </td>
-                        <td>
-                            <span class="badge bg-primary">Enable</span>
-                        </td>
-                        <td><button type="button" class="btn btn-block btn-danger btn-sm">削除</button></td>
-                      </tr>
-                      <tr>
-                        <td><button type="button" class="btn btn-block btn-warning btn-sm">更新</button></td>
-                        <td>PC shop</td>
-                        <td>
-                            2021/01/01 9:00
-                        </td>
-                        <td>
-                            <span class="badge bg-primary">Enable</span>
-                        </td>
-                        <td><button type="button" class="btn btn-block btn-danger btn-sm">削除</button></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <!-- /.card-body -->
-                <div class="card-footer clearfix">
-                  <ul class="pagination pagination-sm m-0 float-right">
-                    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div><!-- /.card -->
+              </div><!-- /.card -->
+            </form>
           </div>
         </div>
         <!-- /.row -->
