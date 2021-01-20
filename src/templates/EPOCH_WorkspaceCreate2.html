@@ -17,6 +17,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- EPOCH style -->
+  <link rel="stylesheet" href="epoch.css">
 </head>
 
 <body class="hold-transition sidebar-collapse layout-top-nav">
@@ -104,17 +106,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div><!-- /.container-fluid -->
       </section>
 
-      <div class="col-sm-12">
-        <h3>管理した環境を指定します</h3>
-      </div>
-
       <!-- Main content -->
       <section class="content">
         <div class="container-fluid">
-          <hr>
           <div class="row">
             <!-- left column -->
             <div class="col-md-12">
+
+              <div class="card-header">
+                <h3 class="card-title">管理した環境を指定します</h3>
+              </div>
+              <!-- /.card-header -->
+
               <!-- jquery validation -->
               <div class="card card-primary">
                 <div class="card-header">
@@ -124,26 +127,38 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <!-- form start -->
                 <form id="quickForm">
                   <div class="card-body">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">クラスター ホスト</label>
-                      <input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                        placeholder="ドメイン・ホスト名またはIPアドレス">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">namespace</label>
-                      <input type="password" name="password" class="form-control" id="exampleInputPassword1"
-                        placeholder="namespace">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">アカウント</label>
-                      <input type="password" name="password" class="form-control" id="exampleInputPassword1"
-                        placeholder="アカウント">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">パスワード</label>
-                      <input type="password" name="password" class="form-control" id="exampleInputPassword1"
-                        placeholder="パスワード">
-                    </div>
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td  style="width: 250px; padding-left:40px;">
+                            クラスター ホスト
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="ドメイン・ホスト名またはIPアドレス"></td>
+                        </tr>
+                        <tr>
+                          <td  style="width: 250px; padding-left:40px;">
+                            namespace
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="namespace"></td>
+                        </tr>
+                        <tr>
+                          <td  style="width: 250px; padding-left:40px;">
+                            アカウント
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="アカウント"></td>
+                        </tr>
+                        <tr>
+                          <td  style="width: 250px; padding-left:40px;">
+                            パスワード
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="パスワード"></td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                   <!-- /.card-body -->
                   <div class="card-footer">
@@ -177,26 +192,38 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <!-- form start -->
                 <form id="quickForm">
                   <div class="card-body">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">クラスター ホスト</label>
-                      <input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                        placeholder="ドメイン・ホスト名またはIPアドレス">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">namespace</label>
-                      <input type="password" name="password" class="form-control" id="exampleInputPassword1"
-                        placeholder="namespace">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">アカウント</label>
-                      <input type="password" name="password" class="form-control" id="exampleInputPassword1"
-                        placeholder="アカウント">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">パスワード</label>
-                      <input type="password" name="password" class="form-control" id="exampleInputPassword1"
-                        placeholder="パスワード">
-                    </div>
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td  style="width: 250px; padding-left:40px;">
+                            クラスター ホスト
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="ドメイン・ホスト名またはIPアドレス"></td>
+                        </tr>
+                        <tr>
+                          <td  style="width: 250px; padding-left:40px;">
+                            namespace
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="namespace"></td>
+                        </tr>
+                        <tr>
+                          <td  style="width: 250px; padding-left:40px;">
+                            アカウント
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="アカウント"></td>
+                        </tr>
+                        <tr>
+                          <td  style="width: 250px; padding-left:40px;">
+                            パスワード
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="パスワード"></td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                   <!-- /.card-body -->
                   <div class="card-footer">
@@ -230,24 +257,38 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <!-- form start -->
                 <form id="quickForm">
                   <div class="card-body">
-                      <label for="exampleInputEmail1">クラスター ホスト</label>
-                      <input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                        placeholder="ドメイン・ホスト名またはIPアドレス">
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">namespace</label>
-                      <input type="password" name="password" class="form-control" id="exampleInputPassword1"
-                        placeholder="namespace">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">アカウント</label>
-                      <input type="password" name="password" class="form-control" id="exampleInputPassword1"
-                        placeholder="アカウント">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">パスワード</label>
-                      <input type="password" name="password" class="form-control" id="exampleInputPassword1"
-                        placeholder="パスワード">
-                    </div>
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td  style="width: 250px; padding-left:40px;">
+                            クラスター ホスト
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="ドメイン・ホスト名またはIPアドレス"></td>
+                        </tr>
+                        <tr>
+                          <td  style="width: 250px; padding-left:40px;">
+                            namespace
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="namespace"></td>
+                        </tr>
+                        <tr>
+                          <td  style="width: 250px; padding-left:40px;">
+                            アカウント
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="アカウント"></td>
+                        </tr>
+                        <tr>
+                          <td  style="width: 250px; padding-left:40px;">
+                            パスワード
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                            placeholder="パスワード"></td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                   <!-- /.card-body -->
                   <div class="card-footer">
