@@ -115,9 +115,46 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="col-md-12">
 
               <div class="card-header">
-                <h3 class="card-title">管理する環境を指定します。</h3>
+                <h3 class="card-title">システム環境の構成を選択します。（１実行環境の構成）</h3>
               </div>
               <!-- /.card-header -->
+
+              <table class="table table-borderless">
+                <tbody>
+                  <tr>
+                    <td colspan="2">
+
+                      <div class="custom-control custom-radio">
+                        <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio" checked="">
+                        <label for="customRadio1" class="custom-control-label">1 クラスタ・1 namespace構成</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+
+                      <div class="custom-control custom-radio">
+                        <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio">
+                        <label for="customRadio2" class="custom-control-label">1 クラスタ・複数namespace構成</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+
+                      <div class="custom-control custom-radio">
+                        <input class="custom-control-input" type="radio" id="customRadio3" name="customRadio" checked="">
+                        <label for="customRadio3" class="custom-control-label">複数クラスタ構成</label>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="card-header">
+                <h3 class="card-title">実行環境群を指定します。</h3>
+              </div>
+
 
               <!-- jquery validation -->
               <div class="card card-primary">
@@ -132,31 +169,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <tbody>
                         <tr>
                           <td  style="width: 250px; padding-left:40px;">
-                            クラスター ホスト
+                            実行環境名
                           </td>
                           <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                            placeholder="ドメイン・ホスト名またはIPアドレス"></td>
-                        </tr>
-                        <tr>
-                          <td  style="width: 250px; padding-left:40px;">
-                            namespace
-                          </td>
-                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                            placeholder="namespace"></td>
-                        </tr>
-                        <tr>
-                          <td  style="width: 250px; padding-left:40px;">
-                            アカウント
-                          </td>
-                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                            placeholder="アカウント"></td>
-                        </tr>
-                        <tr>
-                          <td  style="width: 250px; padding-left:40px;">
-                            パスワード
-                          </td>
-                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                            placeholder="パスワード"></td>
+                            placeholder="環境の利用用途などをもとに名前を指定してください"></td>
                         </tr>
                       </tbody>
                     </table>
@@ -197,31 +213,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <tbody>
                         <tr>
                           <td  style="width: 250px; padding-left:40px;">
-                            クラスター ホスト
+                            実行環境名
                           </td>
                           <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                            placeholder="ドメイン・ホスト名またはIPアドレス"></td>
-                        </tr>
-                        <tr>
-                          <td  style="width: 250px; padding-left:40px;">
-                            namespace
-                          </td>
-                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                            placeholder="namespace"></td>
-                        </tr>
-                        <tr>
-                          <td  style="width: 250px; padding-left:40px;">
-                            アカウント
-                          </td>
-                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                            placeholder="アカウント"></td>
-                        </tr>
-                        <tr>
-                          <td  style="width: 250px; padding-left:40px;">
-                            パスワード
-                          </td>
-                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                            placeholder="パスワード"></td>
+                            placeholder="環境の利用用途などをもとに名前を指定してください"></td>
                         </tr>
                       </tbody>
                     </table>
@@ -262,31 +257,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <tbody>
                         <tr>
                           <td  style="width: 250px; padding-left:40px;">
-                            クラスター ホスト
+                            実行環境名
                           </td>
                           <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                            placeholder="ドメイン・ホスト名またはIPアドレス"></td>
-                        </tr>
-                        <tr>
-                          <td  style="width: 250px; padding-left:40px;">
-                            namespace
-                          </td>
-                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                            placeholder="namespace"></td>
-                        </tr>
-                        <tr>
-                          <td  style="width: 250px; padding-left:40px;">
-                            アカウント
-                          </td>
-                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                            placeholder="アカウント"></td>
-                        </tr>
-                        <tr>
-                          <td  style="width: 250px; padding-left:40px;">
-                            パスワード
-                          </td>
-                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                            placeholder="パスワード"></td>
+                            placeholder="環境の利用用途などをもとに名前を指定してください"></td>
                         </tr>
                       </tbody>
                     </table>
