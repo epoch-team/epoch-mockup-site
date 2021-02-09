@@ -73,91 +73,91 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </nav>
     <!-- /.navbar -->
 
-  <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-expand sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="#" class="brand-link">
-      <img src="./EPOCH-logo.png" alt="EPOCH Logo" class="brand-image elevation-3">
-      <span class="brand-text font-weight-light">&nbsp;</span>
-    </a>
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-expand sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-link">
+        <img src="./EPOCH-logo.png" alt="EPOCH Logo" class="brand-image elevation-3">
+        <span class="brand-text font-weight-light">&nbsp;</span>
+      </a>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-user"></i>
-              <p>
-                アカウント
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="./EPOCH_OrganizationList.html" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
-              <p>
-                オーガナイゼーション
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-star"></i>
-              <p>
-                ロール
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="./EPOCH_WorkspaceList.html" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
-              <p>
-                ワークスペース
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-ellipsis-h"></i>
-              <p>
-                CI/CDパイプライン
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-arrow-circle-right"></i>
-              <p>
-                CI実行
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-play"></i>
-              <p>
-                CD実行
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-file"></i>
-              <p>
-                エクスポート・<br>インポート
-              </p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  アカウント
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./EPOCH_OrganizationList.html" class="nav-link">
+                <i class="nav-icon fas fa-book"></i>
+                <p>
+                  オーガナイゼーション
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-star"></i>
+                <p>
+                  ロール
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./EPOCH_WorkspaceList.html" class="nav-link">
+                <i class="nav-icon fas fa-table"></i>
+                <p>
+                  ワークスペース
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-ellipsis-h"></i>
+                <p>
+                  CI/CDパイプライン
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-arrow-circle-right"></i>
+                <p>
+                  CI実行
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-play"></i>
+                <p>
+                  CD実行
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>
+                  エクスポート・<br>インポート
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -184,109 +184,123 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
               <!-- メインコンテンツ -->
               <div class="card">
-
+                <!-- form start -->
+                <form id="quickForm">
+                  <div class="card-body">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td style="width: 250px; padding-left:40px;">
+                            オーガナイゼーション名
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                              placeholder="作成するオーガナイゼーション名を入力してください"></td>
+                        </tr>
+                        <tr>
+                          <td style="width: 250px; padding-left:40px;">
+                            メールアドレス
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                              placeholder="登録するメールアドレスを入力してください"></td>
+                        </tr>
+                        <tr>
+                          <td style="width: 250px; padding-left:40px;">
+                            住所
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                              placeholder="登録する住所を入力してください"></td>
+                        </tr>
+                        <tr>
+                          <td style="width: 250px; padding-left:40px;">
+                            電話番号
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                              placeholder="登録する電話番号を入力してください"></td>
+                        </tr>
+                        <tr>
+                          <td style="width: 250px; padding-left:40px;">
+                            企業名
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                              placeholder="登録する企業名を入力してください"></td>
+                        </tr>
+                        <tr>
+                          <td style="width: 250px; padding-left:40px;">
+                            部署名
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                              placeholder="登録する部署名を入力してください"></td>
+                        </tr>
+                        <tr>
+                          <td style="width: 250px; padding-left:40px;">
+                            オーガナイゼーション説明
+                          </td>
+                          <td><input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                              placeholder="作成するオーガナイゼーションの説明文を入力してください"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
+                  <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">保存</button>
+                  </div>
+                </form>
+              </div>
+              <!-- /.card -->
+              <!-- メインコンテンツ -->
+              <div class="card">
                 <!-- /.card-header -->
                 <div class="card-body">
-                  <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th style="width: 230px">設定項目</th>
-                        <th>設定内容</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>オーガナイゼーション名</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>メールアドレス</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>住所</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>電話番号</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>企業名</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>部署名</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>オーガナイゼーション説明</td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">保存</button>
-                </div>
-              </div>
-            </div><!-- /.card -->
-            <!-- メインコンテンツ -->
-            <div class="card">
+                  <!-- left column -->
+                  <div class="col-md-12">
 
-              <!-- /.card-header -->
-              <div class="card-body">
-                <!-- left column -->
-                <div class="col-md-12">
-
-                  <div class="card-header">
-                    <p style="color:red">注意</p>
-                    <p>オーガナイゼーションを削除すると紐づく<font style="color:red">ワークスペースも削除</font>されます。
-                    </p>
-                    <button type="submit" class="btn btn-primary" style="background-color:red">オーガナイゼーション削除</button>
+                    <div class="card-header">
+                      <p style="color:red">注意</p>
+                      <p>オーガナイゼーションを削除すると紐づく<font style="color:red">ワークスペースも削除</font>されます。
+                      </p>
+                      <button type="submit" class="btn btn-primary" style="background-color:red">オーガナイゼーション削除</button>
+                    </div>
                   </div>
                 </div>
-
               </div>
-            </div>
-            <!-- /.row -->
-          </div><!-- /.container-fluid -->
+              <!-- /.row -->
+            </div><!-- /.container-fluid -->
+          </div>
+          <!-- /.content -->
         </div>
-        <!-- /.content -->
+        <!-- /.content-wrapper -->
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+          <!-- Control sidebar content goes here -->
+          <div class="p-3">
+            <h5>Title</h5>
+            <p>Sidebar content</p>
+          </div>
+        </aside>
+        <!-- /.control-sidebar -->
+
+        <!-- Main Footer -->
+        <footer class="main-footer">
+          <!-- To the right -->
+          <div class="float-right d-none d-sm-inline">
+            Version 0.1
+          </div>
+          <!-- Default to the left -->
+          <strong>Copyright &copy; 2021 NEC</strong> All rights reserved.
+        </footer>
       </div>
-      <!-- /.content-wrapper -->
+      <!-- ./wrapper -->
 
-      <!-- Control Sidebar -->
-      <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-        <div class="p-3">
-          <h5>Title</h5>
-          <p>Sidebar content</p>
-        </div>
-      </aside>
-      <!-- /.control-sidebar -->
+      <!-- REQUIRED SCRIPTS -->
 
-      <!-- Main Footer -->
-      <footer class="main-footer">
-        <!-- To the right -->
-        <div class="float-right d-none d-sm-inline">
-          Version 0.1
-        </div>
-        <!-- Default to the left -->
-        <strong>Copyright &copy; 2021 NEC</strong> All rights reserved.
-      </footer>
-    </div>
-    <!-- ./wrapper -->
-
-    <!-- REQUIRED SCRIPTS -->
-
-    <!-- jQuery -->
-    <script src="plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
-    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="dist/js/adminlte.min.js"></script>
+      <!-- jQuery -->
+      <script src="plugins/jquery/jquery.min.js"></script>
+      <!-- Bootstrap 4 -->
+      <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- AdminLTE App -->
+      <script src="dist/js/adminlte.min.js"></script>
 </body>
 
 </html>
-]
