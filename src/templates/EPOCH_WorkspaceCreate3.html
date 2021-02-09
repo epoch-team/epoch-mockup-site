@@ -44,8 +44,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </ul>
     <ul class="navbar-nav ml-left" style="color:white;">
       <li class="nav-item d-none d-sm-inline-block">
-        <img src="EPOCH-logo.png" height="40" style="margin-right:20px;">
-        ワークスペース作成
+        ワークスペース
       </li>
       <li class="nav-item d-none d-sm-inline-block">
       
@@ -83,18 +82,93 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </li>
   </nav>
   <!-- /.navbar -->
-  <!-- Navbar -->
-  <div class="btn-toolbar">
-    <div class="btn-group">
-      <button class="btn bg-secondary color-palette" type="button" data-widget="navbar-search">
-        ワークスペース一覧
-      </button>
-      <button class="btn bg-secondary disabled color-palette" type="button" data-widget="navbar-search">
-        ワークスペース新規作成
-      </button>
-    </div>
-  </div>
-  <!-- /.navbar -->
+
+  
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-expand sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-link">
+        <img src="./EPOCH-logo.png" alt="EPOCH Logo" class="brand-image elevation-3">
+        <span class="brand-text font-weight-light">&nbsp;</span>
+      </a>
+  
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                 with font-awesome or any other icon font library -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  アカウント
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./EPOCH_OrganizationList.html" class="nav-link">
+                <i class="nav-icon fas fa-book"></i>
+                <p>
+                  オーガナイゼーション
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-star"></i>
+                <p>
+                  ロール
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./EPOCH_WorkspaceList.html" class="nav-link active">
+                <i class="nav-icon fas fa-table"></i>
+                <p>
+                  ワークスペース
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-ellipsis-h"></i>
+                <p>
+                  CI/CDパイプライン
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-arrow-circle-right"></i>
+                <p>
+                  CI実行
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-play"></i>
+                <p>
+                  CD実行
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>
+                  エクスポート・<br>インポート
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
   
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
